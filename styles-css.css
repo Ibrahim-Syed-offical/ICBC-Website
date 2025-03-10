@@ -41,14 +41,15 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    max-width: 1400px;
+    /*max-width: 1400px;*/
     margin: 0 auto;
+    background-color: #2a7d2afe;
 }
 
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #2a7d2a;
+    color: #ffffff;
 }
 
 .nav-links {
@@ -64,6 +65,7 @@ nav {
     padding: 0.5rem 0;
     font-weight: 500;
     position: relative;
+    color: #ffffff;
 }
 
 .nav-links a::after {
@@ -73,7 +75,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #2a7d2a;
+    background-color: #ffffff;
     transition: width 0.3s ease;
 }
 
@@ -83,7 +85,7 @@ nav {
 }
 
 .nav-links a.active {
-    color: #2a7d2a;
+    color: #ffffff;
     font-weight: 600;
 }
 
@@ -99,7 +101,7 @@ section {
 }
 
 h1, h2, h3, h4 {
-    color: #2a7d2a;
+    color: #1f871f;
     margin-bottom: 1rem;
 }
 
@@ -155,11 +157,12 @@ p {
 .hero {
     text-align: center;
     padding: 5rem 2rem;
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7)), url('/api/placeholder/1400/500');
+    background: linear-gradient(#2a7d2a13, #2a7d2a13), url('/api/placeholder/1400/500');
     background-size: cover;
     background-position: center;
     border-radius: 10px;
     margin-bottom: 3rem;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.08);
 }
 
 .hero h1 {
@@ -170,7 +173,7 @@ p {
 .subtitle {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #555;
+    color: #1f871f;
 }
 
 /* Features Section */
@@ -252,6 +255,7 @@ p {
 
 .sponsor-tier {
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .sponsor-tier h3 {
@@ -282,6 +286,7 @@ p {
 .sponsor-stories {
     margin-top: 4rem;
 }
+
 
 .story {
     display: flex;
@@ -492,6 +497,13 @@ p {
     left: 0;
 }
 
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
 .price {
     font-size: 1.5rem;
     font-weight: bold;
@@ -630,6 +642,8 @@ footer {
     
     .hero {
         padding: 3rem 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     }
     
     .hero h1 {
